@@ -57,7 +57,7 @@ if(x==2 && cambio==true)
 {
 Fire2();
 cambio=false;
-y= 400;
+y= 200;
 }
 if(x==3)
 {
