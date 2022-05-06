@@ -9,6 +9,10 @@ public GameObject gameObject;
 public GameObject gameObject1;
 public GameObject gameObject2;
 
+public float y=0;
+
+private bool cambio=true;
+
 public Text texto;
 public Transform firePoint;
 private float _initialVelocity=15;
@@ -49,13 +53,26 @@ if(x==1)
 {
 Fire();
 }
-if(x==2)
+if(x==2 && cambio==true)
 {
 Fire2();
+cambio=false;
+y= 400;
 }
 if(x==3)
 {
 Fire3();
+}
+}
+
+if(cambio==false && y>0)
+{
+
+
+y--;
+if(y==1)
+{
+cambio=true;
 }
 }
     }
